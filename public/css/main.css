@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1440px;
+    /* margin: 20px auto; */
+}
+
+
+
+input,
+textarea {
+    display: block;
+    background-color: #ddd;
+    border: 1px solid #000;
+    margin-bottom: 10px;
+    width: 250px;
+}
+
+input[type="submit"] {
+    background-color: lightblue;
+    border-radius: 0.75rem;
+    padding: 0.5rem 1rem;
+    margin-top: 16px;
+}
+
+input[type="submit"]:active {
+    background-color: #86c5da;
+}

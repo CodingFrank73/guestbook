@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head')%>
+
+    <body>
+
+        <body>
+            <h1>
+                <%- description %>
+            </h1>
+            <ul>
+                <% if(validationErrors) { %>
+                    <% validationErrors.forEach(err=> { %>
+                        <li>
+                            <%- err.msg %>: <%- err.param %> "<%- err.value %>" in <%- err.location %>
+                        </li>
+                        <% }) %>
+                            <% } %>
+            </ul>
+
+            <a href="/guestbook">zurück zum Gästebuch</a>
+
+        </body>
+
+</html>

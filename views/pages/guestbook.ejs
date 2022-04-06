@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/head')%>
+
+    <body>
+        <h1>Teufelsrochen Guestbook</h1>
+
+        <div class="inputFields">
+            <form action="/newMessage" method="post">
+                <input type="text" name="firstName" placeholder="Bitte den Vornamen eintragen">
+                <input type="text" name="lastName" placeholder="Bitte den Nachnamen eintragen">
+                <input type="email" name="email" placeholder="Bitte hier die Email-Adresse angeben">
+                <textarea name="message" cols="30" rows="10"
+                    placeholder="Und hier kannst Du alles eintragen was Du uns schon immer sagen wolltest"></textarea>
+
+                <input type="submit" value="Eintrag abschicken...">
+            </form>
+        </div>
+
+        <% if(messages.length===0) { %>
+            <h2>Kein Eintrag im Gästebuch</h2>
+            <% } else { %>
+                <% messages.forEach((message)=> { %>
+                    <p>
+                        <%- message.firstName %>
+                            <%- message.email %> schreibt:
+                    </p>
+
+                    <p>
+                        <%- message.message %>
+                    </p>
+                    <br>
+                    <% }) %>
+                        <%} %>
+    </body>
+
+</html>

@@ -1,0 +1,32 @@
+[
+    {
+        "firstName": "Frank",
+        "lastName": "Hauser",
+        "email": "hauser@test.de",
+        "message": "War wie immer sehr schön bei Euch ihr alten Datensammler"
+    },
+    {
+        "firstName": "Manuel",
+        "lastName": "Müller",
+        "email": "mm@hallo.com",
+        "message": "Was für ein tolles Gästebuch"
+    },
+    {
+        "firstName": "Wolfgang",
+        "lastName": "Meier",
+        "email": "wm@test.org",
+        "message": "Hammer Gästebuch"
+    },
+    {
+        "firstName": "hans",
+        "lastName": "Müller",
+        "email": "gm@test.com",
+        "message": "hallo testr"
+    },
+    {
+        "firstName": "jgen",
+        "lastName": "müller",
+        "email": "jm@test.de",
+        "message": "st"
+    }
+]
